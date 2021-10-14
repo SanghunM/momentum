@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", cursive;
+  background-image: url("https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+.container {
+  width: 60%;
+}
+
+.todo-form {
+  margin: 3rem 0;
+}
+
+.todo-form input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+}
+
+.todo-form input:focus {
+  box-shadow: 0 0 0 3px rgb(32, 99, 187);
+  outline: none;
+}
+
+.todo-list {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.todo-item {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-info {
+  width: 80%;
+  text-align: start;
+}
+
+.todo-item .todo-check {
+  margin-right: 1rem;
+}
+
+.todo-item button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.todo-item .content {
+  display: inline-block;
+  width: 70%;
+  text-align: start;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.total {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.price-info {
+  width: 100px;
+}
+
+.price-info .arrows {
+  /* display: none; */
+  opacity: 0;
+  font-size: 0.7rem;
+}
+
+.price-info:hover > .arrows {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.weather {
+  position: fixed;
+  left: 1rem;
+  bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.navigation {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 2rem;
+}
